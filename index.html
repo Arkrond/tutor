@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D.Siryi - Репетитор з фізики</title>
+  <link rel="stylesheet" href="styles.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">D.Siryi</div>
+      <div class="nav-links">
+        <a href="#about">Про викладача</a>
+        <a href="#services">Послуги</a>
+        <a href="#schedule">Розклад</a>
+        <a href="#contact">Контакти</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Привіт, мене звати<br>Денис Сірій</h1>
+        <p>Репетитор з Фізики</p>
+        <div class="cta-buttons">
+          <button class="btn primary">Записатись</button>
+          <button class="btn secondary">Дізнатись більше</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="img/Banner-img.png" alt="Tutor working">
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>Про викладача</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+
+      <div id="quoteContainer" class="quote-container"></div>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Я пропоную</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="icon">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                stroke="#27AE60" stroke-width="2" />
+              <path d="M12 6V12L16 14" stroke="#27AE60" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3>Гнучкий графік</h3>
+          <p>Заняття в зручний для вас час, можливість корегування розкладу</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 2C15.866 2 19 5.13401 19 9C19 11.3869 17.8403 13.4696 16 14.7453V17C16 17.5523 15.5523 18 15 18H9C8.44772 18 8 17.5523 8 17V14.7453C6.15973 13.4696 5 11.3869 5 9C5 5.13401 8.13401 2 12 2Z"
+                stroke="#27AE60" stroke-width="2" />
+              <path d="M9 21H15" stroke="#27AE60" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3>Підтримка на іспитах</h3>
+          <p>Підготовка до ЗНО, ДПА та інших іспитів з фізики</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none">
+              <path d="M4 19.5C4 18.837 4.26339 18.2011 4.73223 17.7322C5.20107 17.2634 5.83696 17 6.5 17H20"
+                stroke="#27AE60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M6.5 2H20V22H6.5C5.83696 22 5.20107 21.7366 4.73223 21.2678C4.26339 20.7989 4 20.163 4 19.5V4.5C4 3.83696 4.26339 3.20107 4.73223 2.73223C5.20107 2.26339 5.83696 2 6.5 2Z"
+                stroke="#27AE60" stroke-width="2" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3>Індивідуальний підхід</h3>
+          <p>Розробка персональної програми навчання під ваші цілі</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <form id="contactForm">
+        <h2 class="contact-title">Зв'яжіться зі мною</h2>
+        <div class="form-row">
+          <input type="text" placeholder="Ім'я">
+          <input type="text" placeholder="Прізвище">
+        </div>
+        <div class="form-row">
+          <input type="email" placeholder="Email">
+          <input type="tel" placeholder="Телефон">
+        </div>
+        <textarea placeholder="Повідомлення"></textarea>
+        <button type="submit" class="btn primary">Надіслати</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p class="copyright">&copy; D.Siryi 2024</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

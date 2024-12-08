@@ -1,0 +1,308 @@
+:root {
+  --primary-color: #27AE60;
+  --dark-bg: #1E1E1E;
+  --text-color: #FFFFFF;
+  --font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  padding: 4rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-image img {
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.hero-content {
+  text-align: left;
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: #229652;
+  transform: translateY(-2px);
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.btn.secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.services {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 48px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.service-card h3 {
+  color: #959595;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.form-row input {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.8rem 0;
+  color: white;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Стиль при фокусі */
+input:focus {
+  border-bottom-color: var(--primary-color);
+}
+
+textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.8rem;
+  color: white;
+  border-radius: 4px;
+  min-height: 150px;
+  margin-bottom: 1rem;
+  resize: vertical;
+}
+
+textarea:focus {
+  border-color: var(--primary-color);
+}
+
+form .btn.primary {
+  margin: 0 auto;
+}
+
+.copyright {
+  color: #4F4F4F;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contact-title {
+  font-size: 48px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.nav-links a {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.about {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 48px;
+    margin-bottom: 2rem;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.quote-container {
+    max-width: 800px;
+    margin: 3rem auto 0;
+    padding: 2rem;
+    background: rgba(184, 184, 184, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.quote-container h3 {
+    color: #c3c3c3;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.quote-container blockquote {
+    margin: 0;
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #FFFFFF;
+}
+
+.quote-container footer {
+    margin-top: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-align: right;
+}
+
+/* Стилі для плейсхолдерів */
+::placeholder {
+    font-weight: 600;
+    color: #FFFFFF;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+/* Лінія знизу картки при ховері */
+.service-card::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+.service-card:hover::after {
+    width: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
