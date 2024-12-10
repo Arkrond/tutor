@@ -28,10 +28,18 @@ document.addEventListener('DOMContentLoaded', function () {
 async function getPhysicsQuote() {
     try {
         const response = await fetch('https://api.quotable.io/random?tags=science,technology');
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
         const data = await response.json();
         displayQuote(data);
     } catch (error) {
         console.error('Помилка отримання цитати:', error);
+        // Display a fallback quote
+        displayQuote({
+            content: "The important thing is not to stop questioning. Curiosity has its own reason for existence.",
+            author: "Albert Einstein"
+        });
     }
 }
 
